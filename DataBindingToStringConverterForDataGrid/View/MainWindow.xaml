@@ -30,8 +30,8 @@
                     </DataGrid.Columns>
 
                     <vm:Dummy Name="Столбец с текстом" Value="Столбец с величиной"  />
-                    <!--<vm:Dummy Name="Имя прямоугольника:" Value="{Binding Rectangle.Name}"  />
-                    <vm:Dummy Name="Сторона a = " Value="{Binding Rectangle.a}"  />-->
+                    <vm:Dummy Name="Имя прямоугольника:" Value="{Binding Rectangle.Name}"  />
+                    <vm:Dummy Name="Сторона a = " Value="{Binding Rectangle.a}"  />
                 </DataGrid>
         </DockPanel>
         <StackPanel Grid.Row="0" Grid.Column="1">
