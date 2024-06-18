@@ -6,13 +6,11 @@
         xmlns:local="clr-namespace:DataBindingToStringConverterForDataGrid"
         xmlns:vm="clr-namespace:DataBindingToStringConverterForDataGrid.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" 
-        d:DataContext="{d:DesignInstance Type=vm:VM}"
-        >
+        Title="MainWindow" Height="450" Width="800">
 
-    <!--<Window.DataContext>
+    <Window.DataContext>
         <vm:VM></vm:VM>
-    </Window.DataContext>-->
+    </Window.DataContext>
     
     <Grid>
         <Grid.ColumnDefinitions>
@@ -32,9 +30,17 @@
                     </DataGrid.Columns>
 
                     <vm:Dummy Name="Столбец с текстом" Value="Столбец с величиной"  />
-                    <!--<vm:Dummy Name="Сторона a = " Value="{Binding Rectangle.a}"  />-->
+                    <!--<vm:Dummy Name="Имя прямоугольника:" Value="{Binding Rectangle.Name}"  />
+                    <vm:Dummy Name="Сторона a = " Value="{Binding Rectangle.a}"  />-->
                 </DataGrid>
         </DockPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="{Binding Rectangle.Name, StringFormat='Имя прямоугольника: {0}'}"></TextBlock>
+            <TextBlock Text="{Binding Rectangle.a, StringFormat='Сторона a = {0}'}"></TextBlock>
+            <TextBlock Text="{Binding Rectangle.b, StringFormat='Сторона b = {0}'}"></TextBlock>
+            <TextBlock Text="{Binding Rectangle.Area, StringFormat='Площадь Area = {0}'}"></TextBlock>
+            
+        </StackPanel>
 
 
     </Grid>

@@ -15,7 +15,7 @@ namespace DataBindingToStringConverterForDataGrid.ViewModel
 
         public VM()
         {
-            Rectangle = new MyRectangle(10, 15);
+            Rectangle = new MyRectangle("МойПрямоугольник", 10, 15);
         }
     }
 }

@@ -21,8 +21,10 @@ namespace DataBindingToStringConverterForDataGrid.Model
         private double _Area;
         public double Area { get => _Area; set => Set(ref _Area, value); }
 
-        public MyRectangle(double a, double b)
+        public MyRectangle(string Name, double a, double b)
         {
+            this.Name = Name;
+
             this.a = a;
             this.b = b;
 
