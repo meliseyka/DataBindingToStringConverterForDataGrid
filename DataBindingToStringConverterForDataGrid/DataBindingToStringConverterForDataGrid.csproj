@@ -59,7 +59,7 @@
     <Compile Include="Model\MyRectangleWithDP.cs" />
     <Compile Include="ViewModel\DummyWithDP.cs" />
     <Compile Include="ViewModel\VM.cs" />
-    <Compile Include="ViewModel\Dummy.cs" />
+    <Compile Include="ViewModel\DummyWithoutDP.cs" />
     <Compile Include="ViewModel\BaseInpc.cs" />
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

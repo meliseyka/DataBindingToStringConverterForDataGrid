@@ -11,7 +11,7 @@ namespace DataBindingToStringConverterForDataGrid.ViewModel
     /// Подробнее https://stackoverflow.com/questions/18495471/adding-rows-to-datagrid-through-xaml
     /// Почти получилось реализовать, но столкнулся с проблемой преобразования Data.Binding в System.String при Value={Binding MyClass.MyProperty}
     /// </summary>
-    public class Dummy : BaseInpc
+    public class DummyWithoutDP : BaseInpc
     {
 
         private string _Name;
