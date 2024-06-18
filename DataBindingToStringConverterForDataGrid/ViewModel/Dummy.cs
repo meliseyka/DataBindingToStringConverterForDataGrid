@@ -18,8 +18,8 @@ namespace DataBindingToStringConverterForDataGrid.ViewModel
         public string Name { get => _Name; set => Set(ref _Name, value); }
 
 
-        private object _Value;
-        public object Value { get => _Value; set => Set(ref _Value, value); }
+        private string _Value;
+        public string Value { get => _Value; set => Set(ref _Value, value); }
 
     }
 }
