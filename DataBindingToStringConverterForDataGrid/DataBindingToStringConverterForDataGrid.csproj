@@ -56,8 +56,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\MyRectangle.cs" />
-    <Compile Include="Model\MyRectangleWithDP.cs" />
-    <Compile Include="ViewModel\DummyWithDP.cs" />
     <Compile Include="ViewModel\VM.cs" />
     <Compile Include="ViewModel\DummyWithoutDP.cs" />
     <Compile Include="ViewModel\BaseInpc.cs" />
