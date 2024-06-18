@@ -28,9 +28,9 @@
                         <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
                         <DataGridTextColumn Header="Value" Binding="{Binding Path=Value}"/>
                     </DataGrid.Columns>
-                <vm:DummyWithoutDP Name="Имя" Value="Значение"></vm:DummyWithoutDP>
+                <!--<vm:DummyWithoutDP Name="Имя" Value="Значение"></vm:DummyWithoutDP>
                 <vm:DummyWithoutDP Name="Имя прямоугольника" Value="{Binding Rectangle.Name}"></vm:DummyWithoutDP>
-                <vm:DummyWithoutDP Name="Сторона a" Value="{Binding Rectangle.a}"></vm:DummyWithoutDP>
+                <vm:DummyWithoutDP Name="Сторона a" Value="{Binding Rectangle.a}"></vm:DummyWithoutDP>-->
                     
                 </DataGrid>
         </DockPanel>
