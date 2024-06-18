@@ -44,4 +44,4 @@ namespace DataBindingToStringConverterForDataGrid.ViewModel
 
     }
 }
-}
+

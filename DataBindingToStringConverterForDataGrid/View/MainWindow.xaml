@@ -48,9 +48,10 @@
                     <DataGridTextColumn Header="Value" Binding="{Binding Path=Value}"/>
                 </DataGrid.Columns>
 
-                <vm:DummyWithDP Name="Столбец с текстом" Value="Столбец с величиной"  />
-                <vm:DummyWithDP Name="Имя прямоугольника:" Value="{Binding RectangleWithDP.Name}"  />
-                <vm:DummyWithDP Name="Сторона a = " Value="{Binding RectangleWithDP.a}"  />
+                <vm:DummyWithDP Name="Имя прямоугольника:" Value="{Binding Rectangle.Name}"  />
+                <vm:DummyWithDP Name="Сторона a = " Value="{Binding Rectangle.a}"  /> 
+
+
             </DataGrid>
         </DockPanel>
 

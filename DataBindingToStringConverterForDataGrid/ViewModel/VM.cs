@@ -19,7 +19,7 @@ namespace DataBindingToStringConverterForDataGrid.ViewModel
         public VM()
         {
             Rectangle = new MyRectangle("МойПрямоугольник", 10, 15);
-            RectangleWithDP = new MyRectangleWithDP("МойПрямоугольникCDP", 10, 15);
+            //RectangleWithDP = new MyRectangleWithDP("МойПрямоугольникCDP", 10, 15);
         }
     }
 }
