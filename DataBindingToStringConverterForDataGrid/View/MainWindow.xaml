@@ -4,9 +4,41 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataBindingToStringConverterForDataGrid"
+        xmlns:vm="clr-namespace:DataBindingToStringConverterForDataGrid.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" 
+        d:DataContext="{d:DesignInstance Type=vm:VM}"
+        >
+
+    <!--<Window.DataContext>
+        <vm:VM></vm:VM>
+    </Window.DataContext>-->
+    
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Column="0" Grid.Row="0">
+                <DataGrid AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Value" Binding="{Binding Path=Value}"/>
+                    </DataGrid.Columns>
+
+                    <vm:Dummy Name="Столбец с текстом" Value="Столбец с величиной"  />
+                    <!--<vm:Dummy Name="Сторона a = " Value="{Binding Rectangle.a}"  />-->
+                </DataGrid>
+        </DockPanel>
+
+
     </Grid>
+
+ 
+    
 </Window>
