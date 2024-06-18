@@ -22,18 +22,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <DockPanel Grid.Column="0" Grid.Row="0">
-                <DataGrid AutoGenerateColumns="False">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
-                        <DataGridTextColumn Header="Value" Binding="{Binding Path=Value}"/>
-                    </DataGrid.Columns>
-
-                    <!--<vm:Dummy Name="Столбец с текстом" Value="Столбец с величиной"  />
-                    <vm:Dummy Name="Имя прямоугольника:" Value="{Binding Rectangle.Name}"  />
-                    <vm:Dummy Name="Сторона a = " Value="{Binding Rectangle.a}"  />-->
-                </DataGrid>
-        </DockPanel>
+       
         <StackPanel Grid.Row="0" Grid.Column="1">
             <TextBlock Text="{Binding Rectangle.Name, StringFormat='Имя прямоугольника: {0}'}"></TextBlock>
             <TextBlock Text="{Binding Rectangle.a, StringFormat='Сторона a = {0}'}"></TextBlock>
