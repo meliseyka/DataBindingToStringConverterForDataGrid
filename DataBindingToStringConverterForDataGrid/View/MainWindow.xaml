@@ -29,9 +29,9 @@
                         <DataGridTextColumn Header="Value" Binding="{Binding Path=Value}"/>
                     </DataGrid.Columns>
 
-                    <vm:Dummy Name="Столбец с текстом" Value="Столбец с величиной"  />
+                    <!--<vm:Dummy Name="Столбец с текстом" Value="Столбец с величиной"  />
                     <vm:Dummy Name="Имя прямоугольника:" Value="{Binding Rectangle.Name}"  />
-                    <vm:Dummy Name="Сторона a = " Value="{Binding Rectangle.a}"  />
+                    <vm:Dummy Name="Сторона a = " Value="{Binding Rectangle.a}"  />-->
                 </DataGrid>
         </DockPanel>
         <StackPanel Grid.Row="0" Grid.Column="1">
@@ -41,6 +41,18 @@
             <TextBlock Text="{Binding Rectangle.Area, StringFormat='Площадь Area = {0}'}"></TextBlock>
             
         </StackPanel>
+        <DockPanel Grid.Column="0" Grid.Row="1">
+            <DataGrid AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                    <DataGridTextColumn Header="Value" Binding="{Binding Path=Value}"/>
+                </DataGrid.Columns>
+
+                <vm:DummyWithDP Name="Столбец с текстом" Value="Столбец с величиной"  />
+                <vm:DummyWithDP Name="Имя прямоугольника:" Value="{Binding RectangleWithDP.Name}"  />
+                <vm:DummyWithDP Name="Сторона a = " Value="{Binding RectangleWithDP.a}"  />
+            </DataGrid>
+        </DockPanel>
 
 
     </Grid>
